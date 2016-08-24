@@ -1,0 +1,56 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item-content {
+    width: 400px;
+    height: 258px;
+}
+
+.item-photo {
+    width: 800px;
+    height: 258px;
+}
+
+.recomendation-item {
+    width: 33%;
+    height: 330px;
+}
+
+.fact-content {
+    width: 33%;
+    height: 255px;
+}
+
+.footer-hashtag {
+    float: left;
+    width: 33%;
+    height: 50px;
+}
+
+.footer-social {
+    float: left;
+    width: 33%;
+    height: 50px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 33%;
+    height: 50px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
