@@ -41,7 +41,7 @@
                         Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
                     </p>
                     <div class='feature-item clearfix'>
-                        <div class='item-content left'>
+                        <div class='item-content'>
                             <h3>Настоящий городок</h3>
                             <span>№1</span>
                             <p>
@@ -50,12 +50,12 @@
                                 своя жизнь
                             </p>
                         </div>
-                        <div class='item-photo right'>
+                        <div class='item-photo'>
                             <img src='img/photo-1.jpg' alt='Городок Седона' width='800' height='256'>
                         </div>
                     </div>
                     <div class='recomendations clearfix'>
-                        <div class='recomendation-item left'>
+                        <div class='recomendation-item house'>
                             <h3>Жилье</h3>
                             <p>
                                 Рекомендуем пожить
@@ -63,7 +63,7 @@
                                 все как в кино!
                             </p>
                         </div>
-                        <div class='recomendation-item left'>
+                        <div class='recomendation-item burger'>
                             <h3>Еда</h3>
                             <p>
                                 Всегда заказывайте
@@ -71,7 +71,7 @@
                                 вы не разочаруетесь!
                             </p>
                         </div>
-                        <div class='recomendation-item right'>
+                        <div class='recomendation-item gift'>
                             <h3>Сувениры</h3>
                             <p>
                                 Не только китайского, 
@@ -81,10 +81,10 @@
                         </div>
                     </div>
                     <div class='feature-item clearfix'>
-                        <div class='item-photo left'>
+                        <div class='item-photo'>
                             <img src='img/photo-2.jpg' alt='Мост дьявола' width='800' height='256'>
                         </div>
-                        <div class='item-content right'>
+                        <div class='item-content pull-right'>
                             <h3>Там есть мост дьявола</h3>
                             <span>№2</span>
                             <p>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class='feature-fact clearfix'>
-                        <div class='article-content left'>
+                        <div class='item-content'>
                             <h3>Небольшая площадь</h3>
                             <span>№3</span>
                             <p>
@@ -103,7 +103,7 @@
                                 находятся очень близко
                             </p>
                         </div>
-                        <div class='fact-content left'>
+                        <div class='item-content'>
                             <h3>Красивая дорога</h3>
                             <span>№4</span>
                             <p>
@@ -112,7 +112,7 @@
                                 не скучно!
                             </p>
                         </div>
-                        <div class='fact-content right'>
+                        <div class='item-content'>
                             <h3>Мало туристов</h3>
                             <span>№5</span>
                             <p>
@@ -133,29 +133,31 @@
                         <a class='btn' href='#'>Поиск гостиницы в Седоне</a>
                         <div class='form-content'>
                             <form class='hotel-search' action='#' method='get'>
-                                <label class='search-item'>
-                                    <span>Дата заезда:</span>
-                                    <input type='date' name='dateIn'>
+                                <div class='search-item'>
+                                    <label for='date-in'>Дата заезда:</label>
+                                    <input type='date' name='dateIn' id='date-in'>
                                     <button type='button' class='btn-search btn-calendar'></button>
-                                </label>
-                                <label class='search-item'>
-                                    <span>Дата выезда:</span>
-                                    <input type='date' name='dateOut'>
+                                </div>
+                                <div class='search-item'>
+                                    <label for='date-out'>Дата выезда:</label>
+                                    <input type='date' name='dateOut' id='date-out'>
                                     <button type='button' class='btn-search btn-calendar'></button>
-                                </label>
-                                <label class='search-item'>
-                                    <span>Взрослые:</span>
-                                    <button type='button' class='btn-search btn-minus'>-</button>
-                                    <input type='number' name='adultNumber'>
-                                    <button type='button' class='btn-search btn-plus'>+</button>
-                                </label>
-                                <label class='search-item'>
-                                    <span>Дети:</span>
-                                    <button type='button' class='btn-search btn-minus'>-</button>
-                                    <input type='number' name='childrenNumber'>
-                                    <button type='button' class='btn-search btn-plus'>+</button>
-                                </label>
-                                <a class='btn' href='#'>Найти</a>
+                                </div>
+                                <div class='visitors-number'>
+                                    <div class='search-item'>
+                                        <label for='adult-number'>Взрослые:</label>
+                                        <button type='button' class='btn-search btn-minus'>-</button>
+                                        <input type='number' name='adultNumber' id='adult-number'>
+                                        <button type='button' class='btn-search btn-plus'>+</button>
+                                    </div>
+                                    <div class='search-item'>
+                                        <label for='children-number'>Дети:</label>
+                                        <button type='button' class='btn-search btn-minus'>-</button>
+                                        <input type='number' name='childrenNumber' id='children-number'>
+                                        <button type='button' class='btn-search btn-plus'>+</button>
+                                    </div>
+                                </div>
+                                <button type='submit' class='btn search-btn'>Найти</button>
                             </form>
                         </div>
                     </div>

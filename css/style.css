@@ -1,6 +1,14 @@
+body {
+    background-color: #ffefce;
+    margin: 0 0;
+    text-transform: uppercase;
+}
+
 .container {
+    background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -10,24 +18,26 @@
 }
 
 .item-content {
+    float: left;
     width: 400px;
-    height: 258px;
+    
 }
 
 .item-photo {
+    float: left;
     width: 800px;
     height: 258px;
 }
 
-.recomendation-item {
-    width: 33%;
-    height: 330px;
+.pull-right {
+    float: right;
 }
 
-.fact-content {
-    width: 33%;
-    height: 255px;
+.recomendation-item {
+    float: left;
+    width: 400px;
 }
+
 
 .footer-hashtag {
     float: left;
@@ -45,12 +55,4 @@
     float: right;
     width: 33%;
     height: 50px;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
 }
