@@ -1,7 +1,9 @@
 body {
-    background-color: #ffefce;
-    margin: 0 0;
+    font-size: 14px;
+    line-height: 21px;
     text-transform: uppercase;
+    background-color: #f2f2f2;
+    margin: 0; 
 }
 
 .container {
@@ -17,10 +19,64 @@ body {
   clear: both;
 }
 
+.main-header {
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -69px;
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+.main-navigation li {
+    display: inline-block;
+    padding: 16px 72px;
+}
+
+.main-navigation li:nth-child(2) {
+    margin-right: 150px;
+}
+
+a {
+    font-weight: bold;
+    line-height: 26px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.index-content {
+    margin-bottom: 30px;
+}
+
+.features {
+    text-align: center;
+}
+
+.features p {
+    margin-bottom: 55px;
+}
+
+.features-title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 500px;
+}
+
 .item-content {
     float: left;
     width: 400px;
-    
+    background-color: #81b3d2;
+    color: #EEEEEE;
 }
 
 .item-photo {
@@ -29,8 +85,9 @@ body {
     height: 258px;
 }
 
-.pull-right {
-    float: right;
+.feature-fact .item-content {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .recomendation-item {
@@ -38,21 +95,56 @@ body {
     width: 400px;
 }
 
+.pull-right {
+    float: right;
+}
+
+.hotel-filter {
+    color: #ffffff;
+    background: url(../img/filter-background.jpg);
+}
+
+.form-options {
+    width: 200px;
+    float: left;
+}
+.form-type {
+    width: 200px;
+    float: left;
+}
+
+.filter-range {
+    width: 400px;
+    float: right;
+}
+
+.item-image {
+    float: left;
+    width: 220px;
+}
+
+.item-info {
+    float: left;
+    width: 300px;
+}
+
+.item-rate {
+    float:right;
+    width: 200px;
+}
 
 .footer-hashtag {
     float: left;
-    width: 33%;
-    height: 50px;
+    width: 400px;
 }
 
 .footer-social {
     float: left;
-    width: 33%;
-    height: 50px;
+    width: 400px;
 }
 
 .footer-copyright {
-    float: right;
-    width: 33%;
-    height: 50px;
+    float: left;
+    width: 400px;
 }
+
