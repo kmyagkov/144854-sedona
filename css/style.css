@@ -1,16 +1,16 @@
 body {
     font-size: 14px;
     line-height: 21px;
+    font-family: 'PT Sans', Arial, sans-serif;
     text-transform: uppercase;
     background-color: #f2f2f2;
     margin: 0; 
 }
 
 .container {
-    background-color: #ffffff;
     width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin: 0 auto; 
+    background-color: #ffffff;
 }
 
 .clearfix::after {
@@ -29,6 +29,11 @@ body {
     margin-left: -69px;
 }
 
+.main-navigation {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
 .main-navigation ul {
     margin: 0;
     padding: 0;
@@ -36,12 +41,20 @@ body {
 }
 
 .main-navigation li {
-    display: inline-block;
-    padding: 16px 72px;
+    float: left;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 240px;
 }
 
-.main-navigation li:nth-child(2) {
-    margin-right: 150px;
+.main-navigation li:last-child {
+    float: right;
+    text-align: right;
+}
+
+.main-navigation li:nth-child(3) {
+    float: right;
+    text-align: right;
 }
 
 a {
@@ -60,6 +73,7 @@ a {
 }
 
 .features p {
+    line-height: 26px;
     margin-bottom: 55px;
 }
 
@@ -75,18 +89,37 @@ a {
 .item-content {
     float: left;
     width: 400px;
+    height: 256px;
+    padding: 50px 59px;
     background-color: #81b3d2;
     color: #EEEEEE;
+    box-sizing: border-box;
+}
+
+.item-content h3, .recomendation-item h3 {
+    width: 151px;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 auto;
 }
 
 .item-photo {
     float: left;
     width: 800px;
-    height: 258px;
+    height: 256px;
+}
+
+.recomendation-item {
+    padding: 160px 0 83px 0;
+}
+
+.recomendation-item p {
+    width: 315px;
+    margin: 0 auto;
 }
 
 .feature-fact .item-content {
-    background-color: #FFFFFF;
+    background-color: #eeeeee;
     color: #000000;
 }
 
@@ -102,6 +135,8 @@ a {
 .hotel-filter {
     color: #ffffff;
     background: url(../img/filter-background.jpg);
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .form-options {
@@ -118,24 +153,33 @@ a {
     float: right;
 }
 
+.catalog-sort, .catalog-list {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
 .item-image {
     float: left;
-    width: 220px;
+    width: 150px;
 }
 
 .item-info {
     float: left;
-    width: 300px;
+    width: 290px;
 }
 
 .item-rate {
-    float:right;
-    width: 200px;
+    float: left;
+    width: 616px;
+}
+
+.main-footer {
+    text-align: center;
 }
 
 .footer-hashtag {
     float: left;
-    width: 400px;
+    width: 240px;
 }
 
 .footer-social {
@@ -145,6 +189,6 @@ a {
 
 .footer-copyright {
     float: left;
-    width: 400px;
+    width: 240px;
 }
 
