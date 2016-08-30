@@ -47,13 +47,12 @@ body {
     width: 240px;
 }
 
-.main-navigation li:last-child {
-    float: right;
+.main-navigation li:nth-child(3) {
+    margin-left: 96px;
     text-align: right;
 }
 
-.main-navigation li:nth-child(3) {
-    float: right;
+.main-navigation li:last-child {
     text-align: right;
 }
 
