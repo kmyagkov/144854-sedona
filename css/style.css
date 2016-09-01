@@ -4,7 +4,6 @@ body {
     font-family: 'PT Sans', Arial, sans-serif;
     text-transform: uppercase;
     background-color: #f2f2f2;
-    position: relative;
     margin: 0;
 }
 
@@ -20,20 +19,15 @@ body {
     clear: both;
 }
 
-.main-header, .index-content {
+.main-header {
     position: relative;
 }
 
-.header-logo, .index-promo {
+.header-logo {
     position: absolute;
     left: 50%;
     margin-left: -69px;
     z-index: 2;
-}
-
-.index-promo {
-    top: 76px;
-    margin-left: -229px;
 }
 
 .main-navigation {
@@ -74,8 +68,15 @@ a {
 .index-content {
     width: 1200px;
     height: 509px;
+    padding-top: 76px;
     margin-bottom: 30px;
-    background: url(../img/index-mask.png) 0 100% no-repeat, url(../img/main-photo.jpg);     
+    background: url(../img/index-mask.png) 0 100% no-repeat, url(../img/main-photo.jpg) no-repeat; 
+    box-sizing: border-box;
+}
+
+.index-content img {
+    display: block;
+    margin: 0 auto;
 }
 
 .features {
@@ -105,8 +106,9 @@ a {
 }
 .item-content {
     float: left;
-    width: 33%;   
-    padding: 45px 45px;
+    width: 400px;  
+    min-height: 256px;
+    padding: 45px 45px 10px 45px;
     color: #EEEEEE;
     box-sizing: border-box;
 }
@@ -127,7 +129,10 @@ a {
     margin: 0;
     margin-bottom: 25px;
 }
-
+.recomendations {
+    height: 330px;
+    overflow: hidden;
+}
 .recomendations .item-content {
     position: relative;
 }
@@ -144,7 +149,7 @@ a {
     content: '';
     background: url(../img/sprite.png) no-repeat 0 0;
     top: 60px;
-    left: 164px;
+    left: 162px;
 }
 
 .burger::before {
@@ -207,6 +212,98 @@ a {
     margin-bottom: 50px;
 }
 
+.search-block {
+    position: relative;
+    width: 570px;
+    margin: 0 auto;
+}
+
+
+
+.form-content {
+    position: absolute;
+    width: 570px;
+    background-color: #ffffff;
+}
+
+.form-content label, .form-content button[type='button'] {
+    position: absolute;
+}
+
+.form-content label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.label-in {
+    top: 60px;
+    left: 55px;
+}
+
+.label-out {
+    top: 126px;
+    left: 55px;
+}
+
+.label-adult {
+    top: 194px;
+    left: 55px;
+}
+
+.label-children {
+    top: 194px;
+    left: 334px;
+}
+
+.hotel-search {
+    padding: 55px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.search-item {
+    padding-left: 110px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+input[type='text'], input[type='number'] {
+    padding: 4px 15px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    text-transform: uppercase;
+}
+
+input[type='number'] {
+    width: 34px;
+}
+
+.adult {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0;
+    padding-left: 110px;
+}
+
+.children {
+    float: right;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
+input[type='text'] {
+    width: 100%;
+}
+
+
 .btn {
     display: inline-block;
     padding: 15px 15px;
@@ -215,17 +312,30 @@ a {
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    border: 0;
+    outline: 0;
 }
 
 .search-btn {
-    padding: 30px 140px;
+    width: 100%;
+    padding: 30px 0;
     font-size: 21px;
     line-height: 26px;
     background-color: #766357;
 }
 
+.form-btn {
+    width: 100%;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+}
 .form-content {
-    display: none;
+    position: absolute;
+    width: 570px;
+    background-color: #ffffff;
 }
 
 .pull-right {
@@ -235,8 +345,8 @@ a {
 .hotel-filter {
     color: #ffffff;
     background: url(../img/filter-background.jpg);
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .form-options {
@@ -253,32 +363,129 @@ a {
     float: right;
 }
 
-.catalog-sort, .catalog-list {
-    padding-left: 72px;
-    padding-right: 72px;
+.catalog-sort {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-found, .sort, .sort-title, .sort-type, .sort-dir {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.catalog-found {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-right: 45px;
+}
+
+.sort-title {
+    margin-right: 43px;
+}
+
+.sort-type {
+    margin-right: 460px;
+}
+
+.sort-type a {
+    margin-right: 33px;
+}
+
+.sort-type a:last-child {
+    margin-right: 0;
+}
+
+.sort a, .sort span {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.sort-dir {
+
+}
+
+.catalog-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #e5e5e5;
 }
 
 .item-image {
     float: left;
-    width: 150px;
+    width: 135px;
+    height: 90px;
+    margin-right: 15px;
+    padding-left: 6%;
 }
 
 .item-info {
     float: left;
-    width: 290px;
+    width: 779px;
+    padding-left: 15px;
+}
+
+.item-info h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.item-type, .item-cost {
+    display: inline-block;
+    min-width: 110px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+.btn-about {
+    min-width: 110px;
+    padding: 5px 15px;
+    margin-right: 2px;
+    background-color: #81b3d2;
+    box-sizing: border-box;
+}
+
+.btn-book {
+    background-color: #766357;
+    padding: 5px 15px;
 }
 
 .item-rate {
-    float: left;
-    width: 616px;
+    float: right;
+    width: 110px;
+    padding-top: 63px;
+    padding-right: 6%;
+}
+
+.item-rate span:last-child {
+    display: block;
+    padding: 3px 10px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.index-map {
+    width: 1200px;
+    height: 593px;
+    background-image: url(../img/map.jpg);
 }
 
 .main-footer {
-    position: absolute;
-    bottom: 0;
     text-align: center;
-    background-color: rgba(255,255,255,0.8);
-    
+}
+
+.index-map + .main-footer {
+    background-color: rgba(255,255,255, 0.8);
+    margin-top: -120px;
 }
 
 .footer-hashtag {

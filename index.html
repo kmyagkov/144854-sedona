@@ -24,16 +24,14 @@
                             <a href='#'>Карта штата</a> 
                         </li>
                         <li>
-                            <a href='#'>Гостиницы</a> 
+                            <a href='catalog.html'>Гостиницы</a> 
                         </li>
                     </ul>              
                 </nav>
             </header>
             <main>
                 <div class='index-content'>
-                    <div class='index-promo'>
-                        <img src='img/Welcome.png' alt='Welcome to the gorgeous “SEDONA„' width='458' height='352'> 
-                    </div>
+                    <img src='img/Welcome.png' alt='Welcome to the gorgeous “SEDONA„' width='458' height='352'> 
                 </div>              
                 <div class='features'>
                     <div class='features-intro'>
@@ -138,37 +136,36 @@
                         <div class='form-content'>
                             <form class='hotel-search' action='#' method='get'>
                                 <div class='search-item'>
-                                    <label for='date-in'>Дата заезда:</label>
-                                    <input type='date' name='dateIn' id='date-in'>
+                                    <label for='date-in' class='label-in'>Дата заезда:</label>
+                                    <input type='text' name='dateIn' id='date-in' value='24 апреля 2016'>
                                     <button type='button' class='btn-search btn-calendar'></button>
                                 </div>
                                 <div class='search-item'>
-                                    <label for='date-out'>Дата выезда:</label>
-                                    <input type='date' name='dateOut' id='date-out'>
+                                    <label for='date-out' class='label-out'>Дата выезда:</label>
+                                    <input type='text' name='dateOut' id='date-out' value='4 июля 2016'>
                                     <button type='button' class='btn-search btn-calendar'></button>
                                 </div>
-                                <div class='visitors-number'>
-                                    <div class='search-item'>
-                                        <label for='adult-number'>Взрослые:</label>
+                                <div class='visitors-number clearfix'>
+                                    <div class='search-item adult'>
+                                        <label for='adult-number' class='label-adult'>Взрослые:</label>
                                         <button type='button' class='btn-search btn-minus'>-</button>
-                                        <input type='number' name='adultNumber' id='adult-number'>
+                                        <input type='number' name='adultNumber' id='adult-number' value='2'>
                                         <button type='button' class='btn-search btn-plus'>+</button>
                                     </div>
-                                    <div class='search-item'>
-                                        <label for='children-number'>Дети:</label>
+                                    <div class='search-item children'>
+                                        <label for='children-number' class='label-children'>Дети:</label>
                                         <button type='button' class='btn-search btn-minus'>-</button>
-                                        <input type='number' name='childrenNumber' id='children-number'>
+                                        <input type='number' name='childrenNumber' id='children-number' value='0'>
                                         <button type='button' class='btn-search btn-plus'>+</button>
                                     </div>
                                 </div>
-                                <button type='submit' class='btn search-btn'>Найти</button>
+                                <button type='submit' class='btn form-btn'>Найти</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </main>
             <div class='index-map'>
-                <img src='img/map.jpg' alt='Карта' width='1200' height='593'>
             </div>
             <footer class='main-footer clearfix'>
                 <a class='footer-hashtag' href='#'>#VisitSedona</a>
