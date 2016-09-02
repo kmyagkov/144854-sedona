@@ -137,29 +137,37 @@
                             <form class='hotel-search' action='#' method='get'>
                                 <div class='search-item'>
                                     <label for='date-in' class='label-in'>Дата заезда:</label>
-                                    <input type='text' name='dateIn' id='date-in' value='24 апреля 2016'>
-                                    <button type='button' class='btn-search btn-calendar'></button>
+                                    <div class='item-input'>
+                                        <input type='text' name='dateIn' id='date-in' value='24 апреля 2016'>
+                                        <button type='submit' class='btn-form btn-calendar'></button>
+                                    </div>
                                 </div>
                                 <div class='search-item'>
                                     <label for='date-out' class='label-out'>Дата выезда:</label>
-                                    <input type='text' name='dateOut' id='date-out' value='4 июля 2016'>
-                                    <button type='button' class='btn-search btn-calendar'></button>
+                                    <div class='item-input'>
+                                        <input type='text' name='dateOut' id='date-out' value='4 июля 2016'>
+                                        <button type='button' class='btn-form btn-calendar'></button>
+                                    </div>
                                 </div>
                                 <div class='visitors-number clearfix'>
-                                    <div class='search-item adult'>
+                                    <div class='search-item pull-left'>
                                         <label for='adult-number' class='label-adult'>Взрослые:</label>
-                                        <button type='button' class='btn-search btn-minus'>-</button>
-                                        <input type='number' name='adultNumber' id='adult-number' value='2'>
-                                        <button type='button' class='btn-search btn-plus'>+</button>
+                                        <div class='item-input'>
+                                            <button type='button' class='btn-form btn-minus'></button>
+                                            <input type='text' name='adultNumber' id='adult-number' value='2'>
+                                            <button type='button' class='btn-form btn-plus'></button>
+                                        </div>
                                     </div>
-                                    <div class='search-item children'>
+                                    <div class='search-item pull-right'>
                                         <label for='children-number' class='label-children'>Дети:</label>
-                                        <button type='button' class='btn-search btn-minus'>-</button>
-                                        <input type='number' name='childrenNumber' id='children-number' value='0'>
-                                        <button type='button' class='btn-search btn-plus'>+</button>
+                                        <div class='item-input'>
+                                            <button type='button' class='btn-form btn-minus'></button>
+                                            <input type='text' name='childrenNumber' id='children-number' value='0'>
+                                            <button type='button' class='btn-form btn-plus'></button>
+                                        </div>
                                     </div>
                                 </div>
-                                <button type='submit' class='btn form-btn'>Найти</button>
+                                <button type='submit' class='btn btn-hotels'>Найти</button>
                             </form>
                         </div>
                     </div>
@@ -176,9 +184,7 @@
                 </div>
                 <div class='footer-copyright'>
                     <span>Website by</span>
-                    <a href='https://htmlacademy.ru'>
-                        <img src='img/copyright-logo.png' alt='HTML Academy' width='113' height='39'>
-                    </a>       
+                    <a href='https://htmlacademy.ru'></a>       
                 </div>
             </footer>
         </div>
