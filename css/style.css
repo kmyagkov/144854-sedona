@@ -248,6 +248,11 @@ a {
     position: absolute;
     width: 570px;
     background-color: #ffffff;
+    display: none;
+}
+
+.form-content-show {
+    display: block;
 }
 
 .hotel-search {
@@ -840,17 +845,18 @@ input[type='checkbox']:checked:disabled + label::before {
 .index-map {
     width: 1200px;
     height: 593px;
-    background-image: url(../img/map.jpg);
 }
 
 .main-footer {
     text-align: center;
+
 }
 
 .index-map + .main-footer {
-    background-color: rgba(255,255,255, 0.8);
-    margin-top: -120px;
-}
+    position: relative;
+    top: -120px;
+    background-color: rgba(255,255,255, 0.8);  
+} 
 
 .footer-hashtag {
     float: left;
