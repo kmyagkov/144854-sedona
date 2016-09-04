@@ -280,14 +280,16 @@ a {
 .item-input {
     position: relative;
     overflow: hidden;
-    padding-right: 38px;
+    padding-right: 30px;
 }
 
 .form-content input[type='text'] {
     box-sizing: border-box;
     width: 100%;
-    padding: 4px 14px;
+    height: 40px;
+    padding-left: 10px;
     font-size: 14px;
+    font-family: 'PT Sans', Arial, sans-serif;
     line-height: 26px;
     font-weight: bold;
     background-color: #f2f2f2;
@@ -310,7 +312,12 @@ a {
 }
 
 .visitors-number .item-input {
-    padding-left: 38px;
+    padding-left: 30px;
+}
+
+.visitors-number input[type='text'] {
+    text-align: center;
+    padding-left: 0;
 }
 
 .btn {
@@ -334,10 +341,12 @@ a {
     border: 0;
     outline: 0;
     background: #f2f2f2 url(../img/sprite.png) no-repeat 4px -247px;
+    cursor: pointer;
 }
 
 .btn-calendar {
     background: #f2f2f2 url(../img/sprite.png) no-repeat 4px -247px;
+    cursor: pointer;
 }
 
 .btn-calendar:hover {
@@ -352,6 +361,7 @@ a {
     left: 0;
     top: 0;
     background: #f2f2f2 url(../img/sprite.png) no-repeat 10px -282px;
+    cursor: pointer;
 }
 
 .btn-minus:hover {
@@ -364,6 +374,7 @@ a {
 
 .btn-plus {
     background: #f2f2f2 url(../img/sprite.png) no-repeat -69px -282px;
+    cursor: pointer;
 }
 
 .btn-plus:hover {
@@ -380,6 +391,7 @@ a {
     font-size: 21px;
     line-height: 26px;
     background-color: #766357;
+    cursor: pointer;
 }
 
 .btn-hotels {
@@ -389,6 +401,7 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     background-color: #81b3d2;
+    cursor: pointer;
 }
 
 .btn-hotels:hover {
@@ -445,6 +458,7 @@ input[type='checkbox'] + label::before {
     margin-right: 15px;
     vertical-align: middle;
     background: url(../img/sprite.png) no-repeat -207px -87px;
+    cursor: pointer;
 }
 
 input[type='checkbox']:checked + label::before {
@@ -529,15 +543,18 @@ input[type='checkbox']:checked:disabled + label::before {
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
+    height: 36px;
     padding-left: 65px;
 }
 
 .price-controls input {
     width: 50px;
+    height: 36px;
     margin: 0;
 
     color: inherit;
     font: inherit;
+    font-family: 'PT Sans', Arial, sans-serif;
 
     background: none;
     border: none;
@@ -595,6 +612,7 @@ input[type='checkbox']:checked:disabled + label::before {
     padding: 6px 35px;
 
     font-size: 14px;
+    font-family: 'PT Sans', Arial, sans-serif;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
