@@ -772,7 +772,11 @@ input[type='checkbox']:disabled + label {
     width: 135px;
     height: 90px;
     margin-right: 15px;
+}
 
+item-image > img {
+    max-width: 100%;
+    height: auto;
 }
 
 .item-info {
