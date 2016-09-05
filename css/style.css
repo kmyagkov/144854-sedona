@@ -219,8 +219,10 @@ a {
 }
 
 .reservation {
+    position: relative;
     text-align: center;
     line-height: 24px;
+    z-index: 100;
 }
 
 .reservation h2 {
@@ -239,7 +241,6 @@ a {
 }
 
 .search-block {
-    position: relative;
     width: 570px;
     margin: 0 auto;
 }
@@ -253,6 +254,7 @@ a {
 
 .form-content-show {
     display: block;
+    z-index: 1;
 }
 
 .hotel-search {
@@ -309,6 +311,11 @@ a {
 }
 
 .form-content input:active {
+    background-color: #ffffff;
+    border: 2px solid #ebebeb;
+}
+
+.form-content input:focus {
     background-color: #ffffff;
     border: 2px solid #ebebeb;
 }
@@ -400,6 +407,15 @@ a {
     cursor: pointer;
 }
 
+.search-btn:hover {
+    background-color: #604e43;
+}
+
+.search-btn:active {
+    color: #857871;
+    background-color: #503e33;
+}
+
 .btn-hotels {
     width: 100%;
     font-size: 21px;
@@ -456,6 +472,10 @@ input[type='checkbox'] {
     display: none;
 }
 
+input[type='checkbox'] + label {
+    cursor: pointer;
+}
+
 input[type='checkbox'] + label::before {
     display: inline-block;
     content: '';
@@ -464,7 +484,7 @@ input[type='checkbox'] + label::before {
     margin-right: 15px;
     vertical-align: middle;
     background: url(../img/sprite.png) no-repeat -207px -87px;
-    cursor: pointer;
+    
 }
 
 input[type='checkbox']:checked + label::before {
@@ -487,6 +507,9 @@ input[type='checkbox']:checked:disabled + label::before {
     background: url(../img/sprite.png) no-repeat -171px -113px;
 }
 
+input[type='checkbox']:disabled + label {
+    cursor: default;
+}
 
 .filter-item {
     margin-bottom: 26px;
@@ -671,12 +694,13 @@ input[type='checkbox']:checked:disabled + label::before {
 
 .sort-type a {
     margin-right: 33px;
-    color: #81b3d2;
-}
-
-.sort-type a:last-child, .sort-type a:nth-child(2){
     color: #b1b1b1;
     border-bottom: 1px dotted #81b3d2
+}
+
+.sort-type .active-type {
+    color: #81b3d2;
+    border-bottom: transparent;
 }
 
 .sort-type a:last-child {
@@ -689,17 +713,17 @@ input[type='checkbox']:checked:disabled + label::before {
 
 .sort-type a:active {
     color: #000000;
-    border: 0;
+    border: transparent;
+}
+
+.sort-type .active-type:hover, .sort-type .active-type:active {
+    color: #81b3d2;
 }
 
 .sort a, .sort span {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
-}
-
-.sort-type a:visited {
-    color: #81b3d2;
 }
 
 .sort-dir a {
@@ -724,6 +748,14 @@ input[type='checkbox']:checked:disabled + label::before {
 }
 
 .sort-dir a:active {
+    background: url(../img/sprite.png) no-repeat -180px -182px;
+}
+
+.sort-dir .active-dir {
+    background: url(../img/sprite.png) no-repeat -180px -182px;
+}
+
+.sort-dir .active-dir:hover {
     background: url(../img/sprite.png) no-repeat -180px -182px;
 }
 
@@ -854,7 +886,7 @@ input[type='checkbox']:checked:disabled + label::before {
 
 .index-map + .main-footer {
     position: relative;
-    top: -120px;
+    margin-top: -120px;
     background-color: rgba(255,255,255, 0.8);  
 } 
 
@@ -954,4 +986,20 @@ input[type='checkbox']:checked:disabled + label::before {
 
 .social-btn-you:active {
     background: url(../img/sprite.png) no-repeat -116px -199px;
+}
+
+@keyframes form-down {
+    0% {
+        transform: translateY(-86px);
+    }
+ 
+    100% {
+        transform: translateY(0px)
+    }
+    
+}
+
+.form-content {
+    animation-name: form-down;
+    animation-duration: 0.5s;
 }

@@ -2,9 +2,10 @@
 <html lang='ru'>
     <head>
         <meta charset='utf-8'>
-        <link rel='stylesheet' href='css/style.css'>
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
         <title>Седона</title>
+        <link rel='stylesheet' href='css/normalize.min.css'>
+        <link rel='stylesheet' href='css/style.min.css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class='container'>
@@ -132,7 +133,7 @@
                         </p>
                     </div>
                     <div class='search-block'>
-                        <a class='btn search-btn form-content-close' href='#'>Поиск гостиницы в Седоне</a>
+                        <a class='btn search-btn' href='#'>Поиск гостиницы в Седоне</a>
                         <div class='form-content'>
                             <form class='hotel-search' action='#' method='get'>
                                 <div class='search-item'>
@@ -190,18 +191,7 @@
             </footer>
         </div>
         
-        <script>
-            var link = document.querySelector('.search-btn');
-            
-            var popup = document.querySelector('.form-content');
-        
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                popup.classList.add('form-content-show');
-                dateIn(focus);
-         });
-            
-        </script>
+        <script src='js/search-form.min.js'></script>
         
     </body>
 </html>
