@@ -204,6 +204,11 @@ a {
     height: 256px;
 }
 
+.item-photo img {
+    max-width: 100%;
+    height: auto;
+}
+
 .feature-fact {
     min-height: 256px;
     overflow: hidden;
@@ -484,7 +489,6 @@ input[type='checkbox'] + label::before {
     margin-right: 15px;
     vertical-align: middle;
     background: url(../img/sprite.png) no-repeat -207px -87px;
-    
 }
 
 input[type='checkbox']:checked + label::before {
@@ -774,7 +778,7 @@ input[type='checkbox']:disabled + label {
     margin-right: 15px;
 }
 
-item-image > img {
+item-image img {
     max-width: 100%;
     height: auto;
 }
