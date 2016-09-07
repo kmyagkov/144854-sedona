@@ -98,6 +98,7 @@ a {
     margin-bottom: 30px;
     background: url(../img/index-mask.png) 0 100% no-repeat, #e1eef7 url(../img/main-photo.jpg) no-repeat;
     box-sizing: border-box;
+    /*http://caniuse.com/#search=box-sizing*/
 }
 
 .index-content img {
@@ -139,6 +140,7 @@ a {
     padding: 54px 45px 10px 45px;
     color: #ffffff;
     box-sizing: border-box;
+    /*ничего не разваливается, критерий пройден*/
 }
 
 .feature-number::before, .feature-number::after {
@@ -216,6 +218,7 @@ a {
     float: left;
     width: 800px;
     height: 256px;
+    /*ничего не разваливается, критерий пройден (если указать картинке размеры 1000х1000 то ничего не меняется в верстке)*/
 }
 
 .item-photo img {
@@ -362,6 +365,7 @@ a {
 .visitors-number input[type='text'] {
     text-align: center;
     padding-left: 0;
+    /*видимая часть ограничена, ограничения на количество символов нет, поля показываются в той области, в которой должны*/
 }
 
 .btn {
@@ -824,9 +828,10 @@ input[type='checkbox']:disabled + label {
     margin-right: 15px;
 }
 
-item-image img {
+.item-image img {
     max-width: 100%;
     height: auto;
+    /*исправил баг с картинкой*/
 }
 
 .item-info {
@@ -932,6 +937,7 @@ item-image img {
 .index-map {
     width: 1200px;
     height: 593px;
+    background: #cbdda9 url(../img/map.jpg) no-repeat;
 }
 
 .main-footer {
@@ -1050,7 +1056,7 @@ item-image img {
     background: url(../img/sprite.png) no-repeat -116px -199px;
 }
 
-@keyframes form-down {
+@-webkit-keyframes form-down {
     0% {
         transform: translateY(-86px);
     }
@@ -1062,6 +1068,6 @@ item-image img {
 }
 
 .form-content {
-    animation-name: form-down;
-    animation-duration: 0.5s;
+    -webkit-animation: form-down linear 0.5s;
+    animation: form-down linear 0.5s;
 }
