@@ -1067,6 +1067,17 @@ input[type='checkbox']:disabled + label {
     
 }
 
+@keyframes form-down {
+    0% {
+        transform: translateY(-86px);
+    }
+ 
+    100% {
+        transform: translateY(0px)
+    }
+    
+}
+
 .form-content {
     -webkit-animation: form-down linear 0.5s;
     animation: form-down linear 0.5s;
